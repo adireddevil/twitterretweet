@@ -2,7 +2,7 @@
   "name": "Twitter Post Tweet",
   "version": "0.0.1",
   "type": "flogo:activity",
-  "ref": "github.com/adireddevil/twitterpost",
+  "ref": "github.com/adireddevil/twitterretweet",
   "description": "activity description",
   "author": "AllStars",
   "inputs":[
