@@ -1,4 +1,4 @@
-package posttweet
+package twitterretweet
 
 import (
 	"io/ioutil"
