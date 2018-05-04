@@ -31,7 +31,7 @@
 	},
 	{
 		"name": "tweetId",
-		"type": "string",
+		"type": "int",
     "required": true
 
 	}

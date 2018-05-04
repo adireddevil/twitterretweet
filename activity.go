@@ -32,7 +32,7 @@ func (a *MyActivity) Eval(context activity.Context) (done bool, err error) {
 	consumerSecret := s.TrimSpace(context.GetInput("consumerSecret").(string))
 	accessToken := s.TrimSpace(context.GetInput("accessToken").(string))
 	accessTokenSecret := s.TrimSpace(context.GetInput("accessTokenSecret").(string))
-	tweetId := s.TrimSpace(context.GetInput("tweetId").(string))
+	tweetId := (context.GetInput("tweetId").(int64))
 
 	if len(consumerKey) == 0 {
 
@@ -57,7 +57,7 @@ func (a *MyActivity) Eval(context activity.Context) (done bool, err error) {
 
 		context.SetOutput("message", "Access Token Secret field is blank")
 
-	} else if len(tweetId) == 0 {
+	} else if (tweetId) > 0 {
 
 		context.SetOutput("statusCode", "105")
 
